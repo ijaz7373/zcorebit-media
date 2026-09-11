@@ -108,44 +108,33 @@
   <section id="philosophy" class="section on-ink" aria-labelledby="philosophy-heading">
     <div class="container">
       <p class="overline" data-reveal><span class="overline__rule"></span>The Philosophy</p>
-    </div>
-    <div class="philosophy-scroll" id="philoScroll">
-      <div class="philosophy-scroll__sticky">
-        <div class="container">
-          <div class="philosophy">
-            <div class="philosophy__stage" id="philoStage">
-              <img class="philosophy__img is-active" data-beat="0" alt="A creative team sketching concepts and storyboards at a studio desk."
-                src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=1600&q=75">
-              <img class="philosophy__img" data-beat="1" alt="A production crew holding a clapperboard on set."
-                src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?auto=format&fit=crop&w=1600&q=75">
-              <img class="philosophy__img" data-beat="2" alt="A colourist grading the finished film in an edit suite."
-                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=75">
-              <div class="philosophy__scrim"></div>
-              <div class="philosophy__progress" aria-hidden="true" id="philoProgress">
-                <span class="is-done"><i></i></span>
-                <span><i></i></span>
-                <span><i></i></span>
-              </div>
-            </div>
-            <ol class="philosophy__beats">
-              <li class="philosophy__beat is-active" data-beat="0" tabindex="0">
-                <span class="philosophy__num">01</span>
-                <h3 class="text-h2" id="philosophy-heading">Core</h3>
-                <p class="text-body-sm">Represents your idea, challenge, or requirement.</p>
-              </li>
-              <li class="philosophy__beat" data-beat="1" tabindex="0">
-                <span class="philosophy__num">02</span>
-                <h3 class="text-h2">Bit</h3>
-                <p class="text-body-sm">Symbolizes the craft and precision we build into every frame.</p>
-              </li>
-              <li class="philosophy__beat" data-beat="2" tabindex="0">
-                <span class="philosophy__num">03</span>
-                <h3 class="text-h2">Media</h3>
-                <p class="text-body-sm">Represents our commitment to stay with you from concept to completion.</p>
-              </li>
-            </ol>
-          </div>
+      <div class="philosophy">
+        <div class="philosophy__stage" id="philoStage">
+          <img class="philosophy__img is-active" data-beat="0" alt="A creative team sketching concepts and storyboards at a studio desk."
+            src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=1600&q=75">
+          <img class="philosophy__img" data-beat="1" alt="A production crew holding a clapperboard on set."
+            src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?auto=format&fit=crop&w=1600&q=75">
+          <img class="philosophy__img" data-beat="2" alt="A colourist grading the finished film in an edit suite."
+            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=75">
+          <div class="philosophy__scrim"></div>
         </div>
+        <ol class="philosophy__beats">
+          <li class="philosophy__beat is-active" data-beat="0" tabindex="0">
+            <span class="philosophy__num">01</span>
+            <h3 class="text-h2" id="philosophy-heading">Core</h3>
+            <p class="text-body-sm">Represents your idea, challenge, or requirement.</p>
+          </li>
+          <li class="philosophy__beat" data-beat="1" tabindex="0">
+            <span class="philosophy__num">02</span>
+            <h3 class="text-h2">Bit</h3>
+            <p class="text-body-sm">Symbolizes the craft and precision we build into every frame.</p>
+          </li>
+          <li class="philosophy__beat" data-beat="2" tabindex="0">
+            <span class="philosophy__num">03</span>
+            <h3 class="text-h2">Media</h3>
+            <p class="text-body-sm">Represents our commitment to stay with you from concept to completion.</p>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
@@ -269,36 +258,55 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section" aria-labelledby="contact-heading">
+  <section id="contact" class="section contact-wow on-ink" aria-labelledby="contact-heading">
+    <div class="contact-wow__glow contact-wow__glow--1" aria-hidden="true"></div>
+    <div class="contact-wow__glow contact-wow__glow--2" aria-hidden="true"></div>
     <div class="container">
       <div class="contact-info contact-info--centered" data-reveal>
+        <span class="contact-wow__badge"><span class="contact-wow__dot" aria-hidden="true"></span>We typically respond within an hour</span>
         <p class="overline"><span class="overline__rule"></span>Get in Touch</p>
-        <h2 id="contact-heading" class="text-h1">Have a project in mind?</h2>
+        <h2 id="contact-heading" class="text-display">Have a <span class="text-gradient">project</span> in mind?</h2>
         <p class="text-body-lg muted">Tell us what you&rsquo;re looking to create — even if the idea is still taking shape. We&rsquo;ll take it from there.</p>
         <div class="contact-info__ctas">
-          <a href="https://wa.me/923039363028" target="_blank" rel="noopener noreferrer" class="btn btn--dark">
+          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg btn--glow">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.8c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.5l.6 1.4c.1.2 0 .4-.1.6l-.4.5c-.1.2-.2.3 0 .6.3.5.8 1.1 1.4 1.5.5.3.7.3.9.1l.5-.5c.2-.2.4-.2.6-.1l1.3.7c.3.1.4.3.4.5 0 .5-.4 1.2-.9 1.4-.5.2-1.3.3-2.6-.3-1.9-.9-3.2-2.8-3.5-3.3-.3-.5-.9-1.5-.9-2.4 0-.9.4-1.2.6-1.4Z"/></svg>
             WhatsApp Us
           </a>
-          <a href="tel:+923039363028" class="link-whatsapp">
+          <a href="tel:+923036393028" class="btn btn--ghost btn--lg">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
             Call Us
           </a>
         </div>
-        <p class="text-body-sm muted">We typically respond within an hour.</p>
-        <dl class="contact-info__details">
-          <div><dt class="overline">Email</dt><dd><a href="mailto:info@zcorebit.com">info@zcorebit.com</a></dd></div>
-          <div><dt class="overline">Phone</dt><dd><a href="tel:+923039363028">+92 303 9363028</a></dd></div>
-          <div><dt class="overline">WhatsApp</dt><dd><a href="https://wa.me/923039363028" target="_blank" rel="noopener noreferrer">+92 303 9363028</a></dd></div>
-          <div><dt class="overline">Studio</dt><dd class="muted"><address>12-B, Gulberg III, Lahore, Pakistan</address></dd></div>
-        </dl>
+
+        <div class="contact-chips">
+          <a href="mailto:info@zcorebit.com" class="contact-chip">
+            <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></span>
+            <span class="contact-chip__label">Email</span>
+            <span class="contact-chip__value">info@zcorebit.com</span>
+          </a>
+          <a href="tel:+923036393028" class="contact-chip">
+            <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+            <span class="contact-chip__label">Phone</span>
+            <span class="contact-chip__value">+92 303 6393028</span>
+          </a>
+          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" class="contact-chip">
+            <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.8c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.5l.6 1.4c.1.2 0 .4-.1.6l-.4.5c-.1.2-.2.3 0 .6.3.5.8 1.1 1.4 1.5.5.3.7.3.9.1l.5-.5c.2-.2.4-.2.6-.1l1.3.7c.3.1.4.3.4.5 0 .5-.4 1.2-.9 1.4-.5.2-1.3.3-2.6-.3-1.9-.9-3.2-2.8-3.5-3.3-.3-.5-.9-1.5-.9-2.4 0-.9.4-1.2.6-1.4Z"/></svg></span>
+            <span class="contact-chip__label">WhatsApp</span>
+            <span class="contact-chip__value">+92 303 6393028</span>
+          </a>
+          <div class="contact-chip">
+            <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="contact-chip__label">Studio</span>
+            <span class="contact-chip__value">Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore</span>
+          </div>
+        </div>
       </div>
 
       <div class="map-card" data-reveal>
         <button type="button" class="map-card__btn" id="mapLoadBtn">
           <span class="map-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <span class="text-h4">Load the map</span>
-          <span class="text-body-sm muted">12-B, Gulberg III, Lahore, Pakistan</span>
+          <span class="text-body-sm muted">Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore</span>
           <span class="map-card__link">View directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
         </button>
       </div>
@@ -350,8 +358,8 @@
         <p class="overline">Contact</p>
         <address class="footer-contact">
           <a href="mailto:info@zcorebit.com">info@zcorebit.com</a>
-          <a href="https://wa.me/923039363028" target="_blank" rel="noopener noreferrer">+92 303 9363028</a>
-          <span class="muted">12-B, Gulberg III, Lahore, Pakistan</span>
+          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer">+92 303 6393028</a>
+          <span class="muted">Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore</span>
         </address>
       </div>
     </div>

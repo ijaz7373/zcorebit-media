@@ -117,34 +117,28 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  /* ---------- Philosophy: scroll-driven progression ---------- */
+  /* ---------- Philosophy crossfade ---------- */
   var beats = document.querySelectorAll('.philosophy__beat');
   var philoImgs = document.querySelectorAll('.philosophy__img');
-  var philoProgressSegs = document.querySelectorAll('#philoProgress span');
   function activateBeat(index) {
     beats.forEach(function (b) { b.classList.toggle('is-active', b.getAttribute('data-beat') === String(index)); });
     philoImgs.forEach(function (img) { img.classList.toggle('is-active', img.getAttribute('data-beat') === String(index)); });
-    philoProgressSegs.forEach(function (seg, i) { seg.classList.toggle('is-done', i <= index); });
   }
   beats.forEach(function (beat) {
     var idx = beat.getAttribute('data-beat');
-    beat.addEventListener('click', function () { activateBeat(idx); });
+    beat.addEventListener('mouseenter', function () { activateBeat(idx); });
     beat.addEventListener('focus', function () { activateBeat(idx); });
   });
-
-  var philoScroll = document.getElementById('philoScroll');
-  if (philoScroll && beats.length && !reducedMotion) {
-    var updatePhilosophyProgress = function () {
-      var rect = philoScroll.getBoundingClientRect();
-      var total = rect.height - window.innerHeight;
-      if (total <= 0) { activateBeat(0); return; }
-      var scrolled = Math.min(Math.max(-rect.top, 0), total);
-      var progress = scrolled / total;
-      var idx = Math.min(beats.length - 1, Math.floor(progress * beats.length));
-      activateBeat(idx);
-    };
-    document.addEventListener('scroll', updatePhilosophyProgress, { passive: true });
-    updatePhilosophyProgress();
+  if (beats.length) {
+    var autoIdx = 0;
+    var philoTimer = reducedMotion ? null : setInterval(function () {
+      autoIdx = (autoIdx + 1) % beats.length;
+      activateBeat(autoIdx);
+    }, 3200);
+    var philoSection = document.getElementById('philosophy');
+    if (philoSection && philoTimer) {
+      philoSection.addEventListener('mouseenter', function () { clearInterval(philoTimer); });
+    }
   }
 
   /* ---------- Portfolio filter ---------- */
@@ -184,31 +178,11 @@
   if (testiPrev) testiPrev.addEventListener('click', function () { testiScrollBy(-1); });
   if (testiNext) testiNext.addEventListener('click', function () { testiScrollBy(1); });
 
-  /* ---------- Testimonials: vertical wheel scrolls the strip horizontally ----------
-     While the pointer is over the section, redirect wheel/trackpad scroll into
-     horizontal movement through the cards. Once the strip is exhausted in that
-     direction, release the event so the page keeps scrolling normally. */
-  var testiSection = document.getElementById('testimonials');
-  if (testiSection && testiViewport && !reducedMotion) {
-    testiSection.addEventListener('wheel', function (e) {
-      var delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
-      if (!delta) return;
-      var maxScroll = testiViewport.scrollWidth - testiViewport.clientWidth;
-      if (maxScroll <= 0) return;
-      var atStart = testiViewport.scrollLeft <= 0;
-      var atEnd = testiViewport.scrollLeft >= maxScroll - 1;
-      if ((delta > 0 && !atEnd) || (delta < 0 && !atStart)) {
-        e.preventDefault();
-        testiViewport.scrollLeft += delta;
-      }
-    }, { passive: false });
-  }
-
   /* ---------- Map load-on-click ---------- */
   var mapBtn = document.getElementById('mapLoadBtn');
   if (mapBtn) {
     mapBtn.addEventListener('click', function () {
-      window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Gulberg III, Lahore, Pakistan'), '_blank', 'noopener');
+      window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore'), '_blank', 'noopener');
     });
   }
 
