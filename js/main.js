@@ -8,7 +8,6 @@
   function hidePreloader() {
     if (!preloader) return;
     preloader.classList.add('is-hidden');
-    document.getElementById('siteHeader') && document.getElementById('siteHeader').classList.add('is-in');
   }
   if (document.readyState === 'complete') {
     setTimeout(hidePreloader, 250);
@@ -17,6 +16,17 @@
   }
   // Safety net so the site never gets stuck behind the preloader.
   setTimeout(hidePreloader, 2500);
+
+  /* ---------- Header reveal ----------
+     On the cinematic hero page, hold the nav back for 2s so the
+     opening media reads uninterrupted, then bring it in softly.
+     Other pages (no full-bleed hero) reveal it right away. */
+  var siteHeader = document.getElementById('siteHeader');
+  if (siteHeader) {
+    var hasCinematicHero = !!document.querySelector('.hero');
+    var headerDelay = hasCinematicHero && !reducedMotion ? 2000 : 150;
+    setTimeout(function () { siteHeader.classList.add('is-in'); }, headerDelay);
+  }
 
   /* ---------- Scroll progress bar + nav solidify ---------- */
   var progress = document.getElementById('scrollProgress');
