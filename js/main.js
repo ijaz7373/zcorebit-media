@@ -3,6 +3,13 @@
 
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Hero video: honor reduced-motion ---------- */
+  var heroVideo = document.getElementById('heroVideo');
+  if (heroVideo && reducedMotion) {
+    heroVideo.removeAttribute('autoplay');
+    heroVideo.pause();
+  }
+
   /* ---------- Preloader ---------- */
   var preloader = document.getElementById('preloader');
   function hidePreloader() {
