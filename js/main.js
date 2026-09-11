@@ -178,14 +178,6 @@
   if (testiPrev) testiPrev.addEventListener('click', function () { testiScrollBy(-1); });
   if (testiNext) testiNext.addEventListener('click', function () { testiScrollBy(1); });
 
-  /* ---------- Map load-on-click ---------- */
-  var mapBtn = document.getElementById('mapLoadBtn');
-  if (mapBtn) {
-    mapBtn.addEventListener('click', function () {
-      window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore'), '_blank', 'noopener');
-    });
-  }
-
   /* ---------- Contact form (client-side only) ---------- */
   var form = document.getElementById('contactForm');
   var formStatus = document.getElementById('formStatus');
