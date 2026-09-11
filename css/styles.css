@@ -244,14 +244,23 @@ section[id]{scroll-margin-top:6.5rem}
 .craft__signature{color:var(--color-accent);font-weight:600}
 
 /* ============================================================
-   Philosophy
+   Philosophy — scroll-pinned progression
    ============================================================ */
-.philosophy{margin-top:2.5rem;display:flex;flex-direction:column;gap:2.5rem}
+.philosophy-scroll{position:relative;height:320vh;margin-top:2.5rem}
+@media (max-width:640px){.philosophy-scroll{height:270vh}}
+@media (prefers-reduced-motion: reduce){.philosophy-scroll{height:auto}}
+.philosophy-scroll__sticky{position:sticky;top:0;min-height:100vh;display:flex;align-items:center;padding-block:6.5rem}
+@media (prefers-reduced-motion: reduce){.philosophy-scroll__sticky{position:static;padding-block:0}}
+.philosophy{display:flex;flex-direction:column;gap:2.5rem;width:100%}
 .philosophy__stage{position:relative;width:100%;aspect-ratio:16/8;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--color-on-ink-line)}
 @media (max-width:640px){.philosophy__stage{aspect-ratio:4/3}}
 .philosophy__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease-standard)}
 .philosophy__img.is-active{opacity:1}
 .philosophy__scrim{position:absolute;inset:0;background:linear-gradient(to top, rgba(5,5,5,.55) 0%, rgba(5,5,5,0) 45%)}
+.philosophy__progress{position:absolute;top:1.25rem;left:1.25rem;right:1.25rem;display:flex;gap:.4rem}
+.philosophy__progress span{height:3px;flex:1;border-radius:var(--radius-full);background:rgba(255,255,255,.25);overflow:hidden}
+.philosophy__progress span i{display:block;height:100%;width:0;background:var(--color-accent);transition:width .3s var(--ease-standard)}
+.philosophy__progress span.is-done i{width:100%}
 .philosophy__beats{display:grid;gap:2rem 1.5rem;grid-template-columns:1fr}
 @media (min-width:640px){.philosophy__beats{grid-template-columns:repeat(3,1fr)}}
 .philosophy__beat{display:flex;flex-direction:column;gap:.6rem;cursor:pointer;padding-top:1rem;border-top:1px solid var(--color-on-ink-line);transition:border-color .3s}

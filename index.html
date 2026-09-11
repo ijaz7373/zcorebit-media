@@ -108,33 +108,44 @@
   <section id="philosophy" class="section on-ink" aria-labelledby="philosophy-heading">
     <div class="container">
       <p class="overline" data-reveal><span class="overline__rule"></span>The Philosophy</p>
-      <div class="philosophy">
-        <div class="philosophy__stage" id="philoStage">
-          <img class="philosophy__img is-active" data-beat="0" alt="A creative team sketching concepts and storyboards at a studio desk."
-            src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=1600&q=75">
-          <img class="philosophy__img" data-beat="1" alt="A production crew holding a clapperboard on set."
-            src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?auto=format&fit=crop&w=1600&q=75">
-          <img class="philosophy__img" data-beat="2" alt="A colourist grading the finished film in an edit suite."
-            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=75">
-          <div class="philosophy__scrim"></div>
+    </div>
+    <div class="philosophy-scroll" id="philoScroll">
+      <div class="philosophy-scroll__sticky">
+        <div class="container">
+          <div class="philosophy">
+            <div class="philosophy__stage" id="philoStage">
+              <img class="philosophy__img is-active" data-beat="0" alt="A creative team sketching concepts and storyboards at a studio desk."
+                src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=1600&q=75">
+              <img class="philosophy__img" data-beat="1" alt="A production crew holding a clapperboard on set."
+                src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?auto=format&fit=crop&w=1600&q=75">
+              <img class="philosophy__img" data-beat="2" alt="A colourist grading the finished film in an edit suite."
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=75">
+              <div class="philosophy__scrim"></div>
+              <div class="philosophy__progress" aria-hidden="true" id="philoProgress">
+                <span class="is-done"><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+              </div>
+            </div>
+            <ol class="philosophy__beats">
+              <li class="philosophy__beat is-active" data-beat="0" tabindex="0">
+                <span class="philosophy__num">01</span>
+                <h3 class="text-h2" id="philosophy-heading">Core</h3>
+                <p class="text-body-sm">Represents your idea, challenge, or requirement.</p>
+              </li>
+              <li class="philosophy__beat" data-beat="1" tabindex="0">
+                <span class="philosophy__num">02</span>
+                <h3 class="text-h2">Bit</h3>
+                <p class="text-body-sm">Symbolizes the craft and precision we build into every frame.</p>
+              </li>
+              <li class="philosophy__beat" data-beat="2" tabindex="0">
+                <span class="philosophy__num">03</span>
+                <h3 class="text-h2">Media</h3>
+                <p class="text-body-sm">Represents our commitment to stay with you from concept to completion.</p>
+              </li>
+            </ol>
+          </div>
         </div>
-        <ol class="philosophy__beats">
-          <li class="philosophy__beat is-active" data-beat="0" tabindex="0">
-            <span class="philosophy__num">01</span>
-            <h3 class="text-h2">Core</h3>
-            <p class="text-body-sm">Represents your idea, challenge, or requirement.</p>
-          </li>
-          <li class="philosophy__beat" data-beat="1" tabindex="0">
-            <span class="philosophy__num">02</span>
-            <h3 class="text-h2">Bit</h3>
-            <p class="text-body-sm">Symbolizes the craft and precision we build into every frame.</p>
-          </li>
-          <li class="philosophy__beat" data-beat="2" tabindex="0">
-            <span class="philosophy__num">03</span>
-            <h3 class="text-h2">Media</h3>
-            <p class="text-body-sm">Represents our commitment to stay with you from concept to completion.</p>
-          </li>
-        </ol>
       </div>
     </div>
   </section>
