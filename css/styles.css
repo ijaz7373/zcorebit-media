@@ -409,11 +409,12 @@ a.contact-chip:hover{transform:translateY(-5px);border-color:var(--color-accent)
    Services detail page
    ============================================================ */
 .service-detail-list{display:flex;flex-direction:column}
-.service-detail{display:grid;grid-template-columns:1fr;gap:1.25rem;padding-block:2.75rem;border-top:1px solid var(--color-line)}
+.service-detail{display:grid;grid-template-columns:1fr;gap:1.25rem;padding-block:2.75rem;border-top:1px solid var(--color-line);scroll-margin-top:6.5rem}
 .service-detail:last-child{border-bottom:1px solid var(--color-line)}
 @media (min-width:768px){.service-detail{grid-template-columns:auto 1fr auto;align-items:start;gap:2.5rem}}
 .service-detail__num{font-family:var(--font-heading);font-size:var(--text-h2);color:var(--color-line-strong);font-variant-numeric:tabular-nums}
 .service-detail__body{display:flex;flex-direction:column;gap:.75rem;max-width:38rem}
+.service-detail__tags{font-size:var(--text-caption);letter-spacing:.02em;color:var(--color-muted)}
 .service-detail__cta{align-self:start}
 @media (max-width:767px){.service-detail__cta{margin-top:.5rem}}
 
