@@ -1,0 +1,9 @@
+{
+  "siteUrl": "https://media.zcorebit.com",
+  "siteName": "Zcorebit Media",
+  "parentName": "Zcorebit",
+  "parentUrl": "https://zcorebit.com",
+  "gtmId": "",
+  "outDir": "dist",
+  "static": ["css", "js", "assets"]
+}
