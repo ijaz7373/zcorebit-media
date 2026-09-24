@@ -82,13 +82,8 @@
     if (e.key === 'Escape') closeMenu();
   });
 
-  /* ---------- Active nav link = current page ---------- */
-  var navLinks = document.querySelectorAll('.pill-nav__links a, .mobile-menu__links a');
-  var currentPage = (window.location.pathname.split('/').pop() || 'index.html');
-  navLinks.forEach(function (link) {
-    var href = link.getAttribute('href');
-    link.classList.toggle('is-active', href === currentPage || (currentPage === '' && href === 'index.html'));
-  });
+  /* Active nav link is stamped server-side per page at build time
+     (see build/partials.mjs) — no client-side matching needed. */
 
   /* ---------- Smooth scroll for data-scroll-to ---------- */
   document.querySelectorAll('[data-scroll-to]').forEach(function (btn) {

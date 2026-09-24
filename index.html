@@ -5,20 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zcorebit Media | Premium Creative Production House in Pakistan</title>
 <meta name="description" content="Zcorebit Media is Pakistan's premium creative production house — brand films, social content, UGC, product content, and post-production for brands and businesses. Start a project today.">
+<link rel="canonical" href="https://media.zcorebit.com/">
 <meta name="theme-color" content="#F7F6F2">
+<meta property="og:site_name" content="Zcorebit Media">
 <meta property="og:title" content="Zcorebit Media | Premium Creative Production House in Pakistan">
 <meta property="og:description" content="Brand films, social content, UGC, product content, and post-production for brands and businesses across Pakistan.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="assets/logo/icon.png">
+<meta property="og:url" content="https://media.zcorebit.com/">
+<meta property="og:image" content="https://media.zcorebit.com/assets/video/hero-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zcorebit Media | Premium Creative Production House in Pakistan">
+<meta name="twitter:description" content="Brand films, social content, UGC, product content, and post-production for brands and businesses across Pakistan.">
+<meta name="twitter:image" content="https://media.zcorebit.com/assets/video/hero-poster.jpg">
+<link rel="icon" type="image/png" href="/assets/logo/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"></noscript>
+<script src="/js/main.js" defer></script>
 </head>
-<body>
+<body id="page-home" data-page="home">
+
+<noscript><style>.preloader{display:none!important}[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
 
 <div class="preloader" id="preloader" role="status" aria-label="Loading Zcorebit Media">
-  <img class="preloader-mark" src="assets/logo/icon.png" alt="" aria-hidden="true">
+  <img class="preloader-mark" src="/assets/logo/icon.webp" width="64" height="55" alt="" aria-hidden="true">
   <span class="sr-only">Loading…</span>
 </div>
 
@@ -28,17 +41,17 @@
 
 <header class="site-header" id="siteHeader">
   <nav class="pill-nav" aria-label="Primary">
-    <a class="pill-nav__logo" href="index.html" aria-label="Zcorebit Media — home">
-      <img src="assets/logo/logo-white.png" alt="Zcorebit Media" class="brand-logo">
+    <a class="pill-nav__logo" href="/" aria-label="Zcorebit Media — home">
+      <img src="/assets/logo/logo-white.webp" alt="Zcorebit Media" class="brand-logo" width="255" height="45" loading="eager" fetchpriority="high" decoding="async">
     </a>
     <ul class="pill-nav__links">
-      <li><a href="index.html" class="is-active">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="work.html">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/" id="nav-link-home-home" class="is-active" aria-current="page">Home</a></li>
+      <li><a href="/services" id="nav-link-services-home">Services</a></li>
+      <li><a href="/work" id="nav-link-work-home">Portfolio</a></li>
+      <li><a href="/about" id="nav-link-about-home">About</a></li>
+      <li><a href="/contact" id="nav-link-contact-home">Contact</a></li>
     </ul>
-    <a class="btn btn--primary btn--sm pill-nav__cta" href="contact.html">Get in Touch</a>
+    <a class="btn btn--primary btn--sm pill-nav__cta" id="nav-cta-home" href="/contact">Get in Touch</a>
     <button class="pill-nav__burger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
@@ -47,31 +60,33 @@
 
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <ul class="mobile-menu__links">
-    <li style="--i:0"><a href="index.html">Home</a></li>
-    <li style="--i:1"><a href="services.html">Services</a></li>
-    <li style="--i:2"><a href="work.html">Portfolio</a></li>
-    <li style="--i:3"><a href="about.html">About</a></li>
-    <li style="--i:4"><a href="contact.html">Contact</a></li>
+    <li style="--i:0"><a href="/" id="mobile-link-home-home" class="is-active" aria-current="page">Home</a></li>
+    <li style="--i:1"><a href="/services" id="mobile-link-services-home">Services</a></li>
+    <li style="--i:2"><a href="/work" id="mobile-link-work-home">Portfolio</a></li>
+    <li style="--i:3"><a href="/about" id="mobile-link-about-home">About</a></li>
+    <li style="--i:4"><a href="/contact" id="mobile-link-contact-home">Contact</a></li>
   </ul>
-  <a href="contact.html" class="btn btn--primary mobile-menu__cta">Get in Touch</a>
+  <a href="/contact" id="mobile-cta-home" class="btn btn--primary mobile-menu__cta">Get in Touch</a>
 </div>
 
 <main id="main">
-
-  <!-- HERO -->
+<!-- HERO -->
   <section id="hero" class="hero on-ink" aria-labelledby="hero-heading">
     <div class="hero__media" aria-hidden="true">
-      <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto"
-        poster="assets/video/hero-poster.jpg">
-        <source src="assets/video/hero.mp4" type="video/mp4">
+      <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" fetchpriority="high"
+        width="1920" height="1080" poster="/assets/images/hero/hero-poster-1920.webp">
+        <source src="/assets/video/hero-1080.webm" type="video/webm" media="(min-width: 768px)">
+        <source src="/assets/video/hero-1080.mp4" type="video/mp4" media="(min-width: 768px)">
+        <source src="/assets/video/hero-720.webm" type="video/webm">
+        <source src="/assets/video/hero-720.mp4" type="video/mp4">
       </video>
       <div class="hero__scrim"></div>
     </div>
     <p class="sr-only">Creative Production House — Lahore, Pakistan</p>
     <div class="hero__content">
       <div class="hero__ctas" data-reveal>
-        <a href="#contact" class="btn btn--primary btn--lg">Get in Touch</a>
-        <a href="work.html" class="btn btn--ghost btn--lg">View Our Work</a>
+        <a href="#contact" id="hero-cta-contact-home" class="btn btn--primary btn--lg">Get in Touch</a>
+        <a href="/work" id="hero-cta-work-home" class="btn btn--ghost btn--lg">View Our Work</a>
       </div>
     </div>
     <div class="hero__heading-wrap sr-only">
@@ -93,7 +108,7 @@
         <p class="text-body-lg muted craft__p" data-reveal>From creative strategy and concept development to production and post-production, we bring ideas to life through thoughtful storytelling, cinematic visuals, and precise execution. We work with brands, businesses, and organisations to create visual experiences that capture attention, build trust, and leave a lasting impression.</p>
         <p class="text-body-lg craft__signature" data-reveal>Zcorebit Media — Your vision in motion.</p>
         <div data-reveal>
-          <a href="contact.html" class="btn btn--outline">Get in Touch <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/contact" id="craft-cta-home" class="btn btn--outline">Get in Touch <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>
@@ -105,12 +120,18 @@
       <p class="overline" data-reveal><span class="overline__rule"></span>The Philosophy</p>
       <div class="philosophy">
         <div class="philosophy__stage" id="philoStage">
-          <img class="philosophy__img is-active" data-beat="0" alt="A creative team sketching concepts and storyboards at a studio desk."
-            src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=1600&q=75">
-          <img class="philosophy__img" data-beat="1" alt="A production crew holding a clapperboard on set."
-            src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?auto=format&fit=crop&w=1600&q=75">
-          <img class="philosophy__img" data-beat="2" alt="A colourist grading the finished film in an edit suite."
-            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1600&q=75">
+          <img class="philosophy__img is-active" data-beat="0" width="1600" height="1066" alt="A creative team sketching concepts and storyboards at a studio desk."
+            src="/assets/images/philosophy/philosophy-core-1600.webp"
+            srcset="/assets/images/philosophy/philosophy-core-960.webp 960w, /assets/images/philosophy/philosophy-core-1600.webp 1600w"
+            sizes="100vw" loading="lazy" decoding="async" fetchpriority="low">
+          <img class="philosophy__img" data-beat="1" width="1600" height="1066" alt="A production crew holding a clapperboard on set."
+            src="/assets/images/philosophy/philosophy-bit-1600.webp"
+            srcset="/assets/images/philosophy/philosophy-bit-960.webp 960w, /assets/images/philosophy/philosophy-bit-1600.webp 1600w"
+            sizes="100vw" loading="lazy" decoding="async" fetchpriority="low">
+          <img class="philosophy__img" data-beat="2" width="1600" height="1066" alt="A colourist grading the finished film in an edit suite."
+            src="/assets/images/philosophy/philosophy-media-1600.webp"
+            srcset="/assets/images/philosophy/philosophy-media-960.webp 960w, /assets/images/philosophy/philosophy-media-1600.webp 1600w"
+            sizes="100vw" loading="lazy" decoding="async" fetchpriority="low">
           <div class="philosophy__scrim"></div>
         </div>
         <ol class="philosophy__beats">
@@ -142,18 +163,18 @@
         <h2 id="services-heading" class="text-h1">Creative production.<br>Built to make an impact.</h2>
       </div>
       <ul class="services-list">
-        <li data-reveal id="brand-commercial-production"><a href="#contact"><span class="services-list__num">01</span><span class="services-list__text"><span class="text-h3">Brand &amp; Commercial Production</span><span class="text-body-sm muted">Brand films, commercials, and campaign content built to make brands unforgettable.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="social-content-production"><a href="#contact"><span class="services-list__num">02</span><span class="services-list__text"><span class="text-h3">Social Content Production</span><span class="text-body-sm muted">Scroll-stopping reels, shorts, and social ads built for every platform.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="ugc-creator-content"><a href="#contact"><span class="services-list__num">03</span><span class="services-list__text"><span class="text-h3">UGC &amp; Creator Content</span><span class="text-body-sm muted">Authentic creator-style content that builds trust and drives conversions.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="product-content"><a href="#contact"><span class="services-list__num">04</span><span class="services-list__text"><span class="text-h3">Product Shoot</span><span class="text-body-sm muted">Product videos and photography that make every listing convert.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="video-editing-post-production"><a href="#contact"><span class="services-list__num">05</span><span class="services-list__text"><span class="text-h3">Video Editing &amp; Post Production</span><span class="text-body-sm muted">The craft behind the final frame — editing, grading, and finishing.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="commercial-photography"><a href="#contact"><span class="services-list__num">06</span><span class="services-list__text"><span class="text-h3">Commercial Photography</span><span class="text-body-sm muted">Product, fashion, food, and lifestyle photography shot to sell.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="personal-branding"><a href="#contact"><span class="services-list__num">07</span><span class="services-list__text"><span class="text-h3">Personal Branding</span><span class="text-body-sm muted">Personal brand content that turns expertise into influence.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="corporate-content"><a href="#contact"><span class="services-list__num">08</span><span class="services-list__text"><span class="text-h3">Corporate Event Shoot</span><span class="text-body-sm muted">Company films and founder videos that build credibility and trust.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="motion-animation"><a href="#contact"><span class="services-list__num">09</span><span class="services-list__text"><span class="text-h3">Motion Graphics &amp; Animation</span><span class="text-body-sm muted">2D and 3D animation that explains, engages, and elevates.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li data-reveal id="event-brand-activations"><a href="#contact"><span class="services-list__num">10</span><span class="services-list__text"><span class="text-h3">Event &amp; Brand Activations</span><span class="text-body-sm muted">Event films and aftermovies that capture the energy of the room.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="brand-commercial-production"><a href="/contact" id="service-cta-01-home"><span class="services-list__num">01</span><span class="services-list__text"><span class="text-h3">Brand &amp; Commercial Production</span><span class="text-body-sm muted">Brand films, commercials, and campaign content built to make brands unforgettable.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="social-content-production"><a href="/contact" id="service-cta-02-home"><span class="services-list__num">02</span><span class="services-list__text"><span class="text-h3">Social Content Production</span><span class="text-body-sm muted">Scroll-stopping reels, shorts, and social ads built for every platform.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="ugc-creator-content"><a href="/contact" id="service-cta-03-home"><span class="services-list__num">03</span><span class="services-list__text"><span class="text-h3">UGC &amp; Creator Content</span><span class="text-body-sm muted">Authentic creator-style content that builds trust and drives conversions.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="product-content"><a href="/contact" id="service-cta-04-home"><span class="services-list__num">04</span><span class="services-list__text"><span class="text-h3">Product Shoot</span><span class="text-body-sm muted">Product videos and photography that make every listing convert.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="video-editing-post-production"><a href="/contact" id="service-cta-05-home"><span class="services-list__num">05</span><span class="services-list__text"><span class="text-h3">Video Editing &amp; Post Production</span><span class="text-body-sm muted">The craft behind the final frame — editing, grading, and finishing.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="commercial-photography"><a href="/contact" id="service-cta-06-home"><span class="services-list__num">06</span><span class="services-list__text"><span class="text-h3">Commercial Photography</span><span class="text-body-sm muted">Product, fashion, food, and lifestyle photography shot to sell.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="personal-branding"><a href="/contact" id="service-cta-07-home"><span class="services-list__num">07</span><span class="services-list__text"><span class="text-h3">Personal Branding</span><span class="text-body-sm muted">Personal brand content that turns expertise into influence.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="corporate-content"><a href="/contact" id="service-cta-08-home"><span class="services-list__num">08</span><span class="services-list__text"><span class="text-h3">Corporate Event Shoot</span><span class="text-body-sm muted">Company films and founder videos that build credibility and trust.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="motion-animation"><a href="/contact" id="service-cta-09-home"><span class="services-list__num">09</span><span class="services-list__text"><span class="text-h3">Motion Graphics &amp; Animation</span><span class="text-body-sm muted">2D and 3D animation that explains, engages, and elevates.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-reveal id="event-brand-activations"><a href="/contact" id="service-cta-10-home"><span class="services-list__num">10</span><span class="services-list__text"><span class="text-h3">Event &amp; Brand Activations</span><span class="text-body-sm muted">Event films and aftermovies that capture the energy of the room.</span></span><span class="services-list__arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
       </ul>
-      <div data-reveal><a href="services.html" class="btn btn--outline">Explore Our Services</a></div>
+      <div data-reveal><a href="/services" id="services-explore-cta-home" class="btn btn--outline">Explore Our Services</a></div>
     </div>
   </section>
 
@@ -173,43 +194,43 @@
       </div>
       <ul class="portfolio-grid" id="portfolioGrid">
         <li data-industry="Corporate" data-reveal>
-          <a href="work.html#vantex-manufacturing-film" class="portfolio-card">
-            <div class="portfolio-card__media"><img loading="lazy" alt="Vantex — Manufacturing Film" src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=1000&q=75"></div>
+          <a href="/work#vantex-manufacturing-film" class="portfolio-card" id="portfolio-card-vantex-home">
+            <div class="portfolio-card__media"><img width="1200" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="Vantex — Manufacturing Film" src="/assets/images/portfolio/vantex-manufacturing-film-1200.webp" srcset="/assets/images/portfolio/vantex-manufacturing-film-800.webp 800w, /assets/images/portfolio/vantex-manufacturing-film-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"></div>
             <div class="portfolio-card__body"><span class="overline">Corporate</span><h3 class="text-h4">Vantex &mdash; Manufacturing Film</h3><p class="text-body-sm muted">Designed to communicate manufacturing excellence with cinematic precision.</p></div>
           </a>
         </li>
         <li data-industry="Hospitality" data-reveal>
-          <a href="work.html#marbell-hotel-brand-film" class="portfolio-card">
-            <div class="portfolio-card__media"><img loading="lazy" alt="Marbell — Hotel Brand Film" src="https://images.unsplash.com/photo-1655516433028-9e0e1599cf8b?auto=format&fit=crop&w=1000&q=75"></div>
+          <a href="/work#marbell-hotel-brand-film" class="portfolio-card" id="portfolio-card-marbell-home">
+            <div class="portfolio-card__media"><img width="1200" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="Marbell — Hotel Brand Film" src="/assets/images/portfolio/marbell-hotel-brand-film-1200.webp" srcset="/assets/images/portfolio/marbell-hotel-brand-film-800.webp 800w, /assets/images/portfolio/marbell-hotel-brand-film-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"></div>
             <div class="portfolio-card__body"><span class="overline">Hospitality</span><h3 class="text-h4">Marbell &mdash; Hotel Brand Film</h3><p class="text-body-sm muted">Luxury hospitality captured through cinematic storytelling and aerial cinematography.</p></div>
           </a>
         </li>
         <li data-industry="Commercial" data-reveal>
-          <a href="work.html#luma-product-launch-campaign" class="portfolio-card">
-            <div class="portfolio-card__media"><img loading="lazy" alt="Luma — Product Launch Campaign" src="https://images.unsplash.com/photo-1668952135120-7d997b1b3778?auto=format&fit=crop&w=1000&q=75"></div>
+          <a href="/work#luma-product-launch-campaign" class="portfolio-card" id="portfolio-card-luma-home">
+            <div class="portfolio-card__media"><img width="1200" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="Luma — Product Launch Campaign" src="/assets/images/portfolio/luma-product-launch-campaign-1200.webp" srcset="/assets/images/portfolio/luma-product-launch-campaign-800.webp 800w, /assets/images/portfolio/luma-product-launch-campaign-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"></div>
             <div class="portfolio-card__body"><span class="overline">Commercial</span><h3 class="text-h4">Luma &mdash; Product Launch Campaign</h3><p class="text-body-sm muted">A high-impact campaign created to introduce a new product with clarity, energy, and visual precision.</p></div>
           </a>
         </li>
         <li data-industry="Hospitality" data-reveal>
-          <a href="work.html#aurelio-hotel-brand-film" class="portfolio-card">
-            <div class="portfolio-card__media"><img loading="lazy" alt="Aurelio — Hotel Brand Film" src="https://images.unsplash.com/photo-1742844552700-3926862c5311?auto=format&fit=crop&w=1000&q=75"></div>
+          <a href="/work#aurelio-hotel-brand-film" class="portfolio-card" id="portfolio-card-aurelio-home">
+            <div class="portfolio-card__media"><img width="1200" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="Aurelio — Hotel Brand Film" src="/assets/images/portfolio/aurelio-hotel-brand-film-1200.webp" srcset="/assets/images/portfolio/aurelio-hotel-brand-film-800.webp 800w, /assets/images/portfolio/aurelio-hotel-brand-film-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"></div>
             <div class="portfolio-card__body"><span class="overline">Hospitality</span><h3 class="text-h4">Aurelio &mdash; Hotel Brand Film</h3><p class="text-body-sm muted">Creating visuals that elevate the guest experience and strengthen hospitality brands.</p></div>
           </a>
         </li>
         <li data-industry="Commercial" data-reveal>
-          <a href="work.html#solvane-fashion-campaign" class="portfolio-card">
-            <div class="portfolio-card__media"><img loading="lazy" alt="Solvane — Fashion Campaign" src="https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?auto=format&fit=crop&w=1000&q=75"></div>
+          <a href="/work#solvane-fashion-campaign" class="portfolio-card" id="portfolio-card-solvane-home">
+            <div class="portfolio-card__media"><img width="1200" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="Solvane — Fashion Campaign" src="/assets/images/portfolio/solvane-fashion-campaign-1200.webp" srcset="/assets/images/portfolio/solvane-fashion-campaign-800.webp 800w, /assets/images/portfolio/solvane-fashion-campaign-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"></div>
             <div class="portfolio-card__body"><span class="overline">Commercial</span><h3 class="text-h4">Solvane &mdash; Fashion Campaign</h3><p class="text-body-sm muted">Premium visuals crafted for a bold, image-driven fashion brand.</p></div>
           </a>
         </li>
         <li data-industry="Documentary" data-reveal>
-          <a href="work.html#amaan-purpose-driven-film" class="portfolio-card">
-            <div class="portfolio-card__media"><img loading="lazy" alt="Amaan — Purpose-Driven Film" src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?auto=format&fit=crop&w=1000&q=75"></div>
+          <a href="/work#amaan-purpose-driven-film" class="portfolio-card" id="portfolio-card-amaan-home">
+            <div class="portfolio-card__media"><img width="1200" height="900" loading="lazy" decoding="async" fetchpriority="low" alt="Amaan — Purpose-Driven Film" src="/assets/images/portfolio/amaan-purpose-driven-film-1200.webp" srcset="/assets/images/portfolio/amaan-purpose-driven-film-800.webp 800w, /assets/images/portfolio/amaan-purpose-driven-film-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"></div>
             <div class="portfolio-card__body"><span class="overline">Documentary</span><h3 class="text-h4">Amaan &mdash; Purpose-Driven Film</h3><p class="text-body-sm muted">Authentic storytelling designed to inspire awareness, trust, and meaningful engagement.</p></div>
           </a>
         </li>
       </ul>
-      <div data-reveal><a href="work.html" class="btn btn--outline">View Full Portfolio</a></div>
+      <div data-reveal><a href="/work" id="work-view-all-cta-home" class="btn btn--outline">View Full Portfolio</a></div>
     </div>
   </section>
 
@@ -263,33 +284,33 @@
         <h2 id="contact-heading" class="text-display">Have a <span class="text-gradient">project</span> in mind?</h2>
         <p class="text-body-lg muted">Tell us what you&rsquo;re looking to create — even if the idea is still taking shape. We&rsquo;ll take it from there.</p>
         <div class="contact-info__ctas">
-          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg btn--glow">
+          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" id="whatsapp-cta-home" class="btn btn--primary btn--lg btn--glow">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.8c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.5l.6 1.4c.1.2 0 .4-.1.6l-.4.5c-.1.2-.2.3 0 .6.3.5.8 1.1 1.4 1.5.5.3.7.3.9.1l.5-.5c.2-.2.4-.2.6-.1l1.3.7c.3.1.4.3.4.5 0 .5-.4 1.2-.9 1.4-.5.2-1.3.3-2.6-.3-1.9-.9-3.2-2.8-3.5-3.3-.3-.5-.9-1.5-.9-2.4 0-.9.4-1.2.6-1.4Z"/></svg>
             WhatsApp Us
           </a>
-          <a href="tel:+923036393028" class="btn btn--ghost btn--lg">
+          <a href="tel:+923036393028" id="call-cta-home" class="btn btn--ghost btn--lg">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
             Call Us
           </a>
         </div>
 
         <div class="contact-chips">
-          <a href="mailto:info@zcorebit.com" class="contact-chip">
+          <a href="mailto:info@zcorebit.com" id="contact-chip-email-home" class="contact-chip">
             <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></span>
             <span class="contact-chip__label">Email</span>
             <span class="contact-chip__value">info@zcorebit.com</span>
           </a>
-          <a href="tel:+923036393028" class="contact-chip">
+          <a href="tel:+923036393028" id="contact-chip-phone-home" class="contact-chip">
             <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
             <span class="contact-chip__label">Phone</span>
             <span class="contact-chip__value">+92 303 6393028</span>
           </a>
-          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" class="contact-chip">
+          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" id="contact-chip-whatsapp-home" class="contact-chip">
             <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.8c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.5l.6 1.4c.1.2 0 .4-.1.6l-.4.5c-.1.2-.2.3 0 .6.3.5.8 1.1 1.4 1.5.5.3.7.3.9.1l.5-.5c.2-.2.4-.2.6-.1l1.3.7c.3.1.4.3.4.5 0 .5-.4 1.2-.9 1.4-.5.2-1.3.3-2.6-.3-1.9-.9-3.2-2.8-3.5-3.3-.3-.5-.9-1.5-.9-2.4 0-.9.4-1.2.6-1.4Z"/></svg></span>
             <span class="contact-chip__label">WhatsApp</span>
             <span class="contact-chip__value">+92 303 6393028</span>
           </a>
-          <div class="contact-chip">
+          <div class="contact-chip" id="contact-chip-studio-home">
             <span class="contact-chip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
             <span class="contact-chip__label">Studio</span>
             <span class="contact-chip__value">Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore</span>
@@ -298,7 +319,7 @@
       </div>
 
       <div class="map-card" data-reveal>
-        <a href="https://maps.app.goo.gl/vutJ6R8FSEWKh3YW7" target="_blank" rel="noopener noreferrer" class="map-card__btn">
+        <a href="https://maps.app.goo.gl/vutJ6R8FSEWKh3YW7" target="_blank" rel="noopener noreferrer" id="map-cta-home" class="map-card__btn">
           <span class="map-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <span class="text-h4">Find us on the map</span>
           <span class="text-body-sm muted">Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore</span>
@@ -307,7 +328,6 @@
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer on-ink" id="siteFooter">
@@ -315,53 +335,55 @@
   <div class="container site-footer__inner">
     <div class="footer-grid">
       <div class="footer-brand" data-reveal>
-        <a class="pill-nav__logo" href="index.html" aria-label="Zcorebit Media — home">
-          <img src="assets/logo/logo-white.png" alt="Zcorebit Media" class="brand-logo">
+        <a class="pill-nav__logo" href="/" aria-label="Zcorebit Media — home">
+          <img src="/assets/logo/logo-white.webp" alt="Zcorebit Media" class="brand-logo" width="255" height="45" loading="lazy" decoding="async" fetchpriority="low">
         </a>
         <p class="footer-brand__tag">Zcorebit Media — Your vision in motion.</p>
         <p class="muted">We turn ideas into cinematic films, commercial content, and visual stories that make an impact.</p>
         <ul class="social-links">
-          <li><a href="https://www.instagram.com/zcorebitmedia" target="_blank" rel="noopener noreferrer" aria-label="Zcorebit Media on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/></svg></a></li>
-          <li><a href="#" aria-label="Zcorebit Media on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
-          <li><a href="https://www.linkedin.com/company/zcorebit?originalSubdomain=pk" target="_blank" rel="noopener noreferrer" aria-label="Zcorebit Media on LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
-          
+          <li><a href="https://www.instagram.com/zcorebitmedia" target="_blank" rel="noopener noreferrer" id="social-instagram-home" aria-label="Zcorebit Media on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/company/zcorebit?originalSubdomain=pk" target="_blank" rel="noopener noreferrer" id="social-linkedin-home" aria-label="Zcorebit Media on LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
         </ul>
       </div>
-      <nav aria-label="Footer — pages" data-reveal>
-        <p class="overline">Explore</p>
-        <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Portfolio</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Footer — services" data-reveal>
-        <p class="overline">Services</p>
-        <ul class="footer-nav">
-          <li><a href="services.html#brand-commercial-production">Brand &amp; Commercial</a></li>
-          <li><a href="services.html#social-content-production">Social Content</a></li>
-          <li><a href="services.html#ugc-creator-content">UGC &amp; Creator</a></li>
-          <li><a href="services.html#product-content">Product Shoot</a></li>
-          <li><a href="services.html#video-editing-post-production">Post Production</a></li>
-          <li><a href="services.html#commercial-photography">Photography</a></li>
-        </ul>
-      </nav>
+      <details class="footer-acc" id="footer-explore-home" open data-reveal>
+        <summary class="overline">Explore</summary>
+        <nav aria-label="Footer — pages">
+          <ul class="footer-nav">
+            <li><a href="/" id="footer-link-home-home">Home</a></li>
+            <li><a href="/work" id="footer-link-work-home">Portfolio</a></li>
+            <li><a href="/services" id="footer-link-services-home">Services</a></li>
+            <li><a href="/about" id="footer-link-about-home">About</a></li>
+            <li><a href="/contact" id="footer-link-contact-home">Contact</a></li>
+          </ul>
+        </nav>
+      </details>
+      <details class="footer-acc" id="footer-services-home" open data-reveal>
+        <summary class="overline">Services</summary>
+        <nav aria-label="Footer — services">
+          <ul class="footer-nav">
+            <li><a href="/services#brand-commercial-production">Brand &amp; Commercial</a></li>
+            <li><a href="/services#social-content-production">Social Content</a></li>
+            <li><a href="/services#ugc-creator-content">UGC &amp; Creator</a></li>
+            <li><a href="/services#product-content">Product Shoot</a></li>
+            <li><a href="/services#video-editing-post-production">Post Production</a></li>
+            <li><a href="/services#commercial-photography">Photography</a></li>
+          </ul>
+        </nav>
+      </details>
       <div data-reveal>
         <p class="overline">Contact</p>
         <address class="footer-contact">
-          <a href="mailto:info@zcorebit.com">info@zcorebit.com</a>
-          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer">+92 303 6393028</a>
+          <a href="mailto:info@zcorebit.com" id="footer-email-home">info@zcorebit.com</a>
+          <a href="https://wa.me/923036393028" target="_blank" rel="noopener noreferrer" id="footer-whatsapp-home">+92 303 6393028</a>
           <span class="muted">Building No. 92-G, 2nd Floor, G-Block, Sector G, DHA Phase 1, Lahore</span>
         </address>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="text-body-sm muted">&copy; 2026 Zcorebit Media. All rights reserved.</p>
+      <p class="text-body-sm muted">&copy; 2026 Zcorebit Media. All rights reserved. Part of <a href="https://zcorebit.com" target="_blank" rel="noopener noreferrer" style="text-decoration:underline">Zcorebit</a>.</p>
       <div class="footer-bottom__links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="/privacy" id="footer-privacy-home">Privacy</a>
+        <a href="/terms" id="footer-terms-home">Terms</a>
         <button type="button" id="backToTop">Back to Top
           <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span>
         </button>
@@ -370,6 +392,5 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
